@@ -2,8 +2,9 @@
 # Load and parse a JSON data file and determine some information about it
 
 import json
-import pprint
 
+import pprint
+with open("../../sample-weather-history.json","r") as weatherfile:
 # open the sample weather data file and use the json module to load and parse it
 with open("../../sample-weather-history.json", "r") as weatherfile:
     weatherdata = json.load(weatherfile)
